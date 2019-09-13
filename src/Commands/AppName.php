@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\LaravelApp;
+namespace Helldar\LaravelHelpers;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

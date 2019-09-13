@@ -1,11 +1,12 @@
 {
-    "name": "andrey-helldar/laravel-app",
-    "description": "",
+    "name": "andrey-helldar/laravel-helpers",
+    "description": "Deprecated Laravel 6 helpers",
+    "keywords": ["laravel", "helpers"],
     "type": "library",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/andrey-helldar/laravel-app/issues",
-        "source": "https://github.com/andrey-helldar/laravel-app"
+        "issues": "https://github.com/andrey-helldar/laravel-helpers/issues",
+        "source": "https://github.com/andrey-helldar/laravel-helpers"
     },
     "authors": [
         {
@@ -33,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Helldar\\LaravelApp\\ServiceProvider"
+                "Helldar\\LaravelHelpers\\ServiceProvider"
             ]
         }
     }

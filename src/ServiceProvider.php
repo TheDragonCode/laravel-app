@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\LaravelApp;
+namespace Helldar\LaravelHelpers;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
