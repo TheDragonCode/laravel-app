@@ -11,13 +11,6 @@ This package provides a backwards compatibility layer for Laravel 5.8 `app:name`
 </p>
 
 
-## Content
-
-* [Installation](#installation)
-* [Using](#using)
-* [License](#license)
-
-
 ## Installation
 
 To get the latest version of Laravel Helpers, simply require the project using [Composer](https://getcomposer.org):
