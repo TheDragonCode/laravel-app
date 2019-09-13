@@ -56,6 +56,7 @@ class AppName extends Command
     public function __construct(Composer $composer, Filesystem $files)
     {
         parent::__construct();
+
         $this->files    = $files;
         $this->composer = $composer;
     }
@@ -63,25 +64,29 @@ class AppName extends Command
     /**
      * Execute the console command.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function handle()
     {
         $this->currentRoot = trim($this->laravel->getNamespace(), '\\');
+
         $this->setAppDirectoryNamespace();
         $this->setBootstrapNamespaces();
         $this->setConfigNamespaces();
         $this->setComposerNamespace();
         $this->setDatabaseFactoryNamespaces();
+
         $this->info('Application namespace set!');
+
         $this->composer->dumpAutoloads();
+
         $this->call('optimize:clear');
     }
 
     /**
      * Set the namespace on the files in the app directory.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setAppDirectoryNamespace()
     {
@@ -89,6 +94,7 @@ class AppName extends Command
             ->in($this->laravel['path'])
             ->contains($this->currentRoot)
             ->name('*.php');
+
         foreach ($files as $file) {
             $this->replaceNamespace($file->getRealPath());
         }
@@ -99,45 +105,49 @@ class AppName extends Command
      *
      * @param string $path
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function replaceNamespace($path)
     {
-        $search  = [
+        $search = [
             'namespace ' . $this->currentRoot . ';',
             $this->currentRoot . '\\',
         ];
+
         $replace = [
             'namespace ' . $this->argument('name') . ';',
             $this->argument('name') . '\\',
         ];
+
         $this->replaceIn($path, $search, $replace);
     }
 
     /**
      * Set the bootstrap namespaces.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setBootstrapNamespaces()
     {
-        $search  = [
+        $search = [
             $this->currentRoot . '\\Http',
             $this->currentRoot . '\\Console',
             $this->currentRoot . '\\Exceptions',
         ];
+
         $replace = [
             $this->argument('name') . '\\Http',
             $this->argument('name') . '\\Console',
             $this->argument('name') . '\\Exceptions',
         ];
+
         $this->replaceIn($this->getBootstrapPath(), $search, $replace);
     }
 
     /**
      * Set the namespace in the appropriate configuration files.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setConfigNamespaces()
     {
@@ -149,25 +159,27 @@ class AppName extends Command
     /**
      * Set the application provider namespaces.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setAppConfigNamespaces()
     {
-        $search  = [
+        $search = [
             $this->currentRoot . '\\Providers',
             $this->currentRoot . '\\Http\\Controllers\\',
         ];
+
         $replace = [
             $this->argument('name') . '\\Providers',
             $this->argument('name') . '\\Http\\Controllers\\',
         ];
+
         $this->replaceIn($this->getConfigPath('app'), $search, $replace);
     }
 
     /**
      * Set the authentication User namespace.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setAuthConfigNamespace()
     {
@@ -181,7 +193,7 @@ class AppName extends Command
     /**
      * Set the services User namespace.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setServicesConfigNamespace()
     {
@@ -195,7 +207,7 @@ class AppName extends Command
     /**
      * Set the PSR-4 namespace in the Composer file.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setComposerNamespace()
     {
@@ -209,7 +221,7 @@ class AppName extends Command
     /**
      * Set the namespace in database factory files.
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function setDatabaseFactoryNamespaces()
     {
@@ -217,6 +229,7 @@ class AppName extends Command
             ->in(database_path('factories'))
             ->contains($this->currentRoot)
             ->name('*.php');
+
         foreach ($files as $file) {
             $this->replaceIn(
                 $file->getRealPath(),
@@ -232,7 +245,7 @@ class AppName extends Command
      * @param string|array $search
      * @param string|array $replace
      *
-     * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     protected function replaceIn($path, $search, $replace)
     {
