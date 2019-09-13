@@ -11,8 +11,6 @@ if (!function_exists('array_add')) {
      * @param mixed $value
      *
      * @return array
-     *
-     * @deprecated Arr::add() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_add($array, $key, $value)
     {
@@ -27,8 +25,6 @@ if (!function_exists('array_collapse')) {
      * @param array $array
      *
      * @return array
-     *
-     * @deprecated Arr::collapse() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_collapse($array)
     {
@@ -43,8 +39,6 @@ if (!function_exists('array_divide')) {
      * @param array $array
      *
      * @return array
-     *
-     * @deprecated Arr::divide() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_divide($array)
     {
@@ -60,8 +54,6 @@ if (!function_exists('array_dot')) {
      * @param string $prepend
      *
      * @return array
-     *
-     * @deprecated Arr::dot() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_dot($array, $prepend = '')
     {
@@ -77,8 +69,6 @@ if (!function_exists('array_except')) {
      * @param array|string $keys
      *
      * @return array
-     *
-     * @deprecated Arr::except() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_except($array, $keys)
     {
@@ -95,8 +85,6 @@ if (!function_exists('array_first')) {
      * @param mixed $default
      *
      * @return mixed
-     *
-     * @deprecated Arr::first() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_first($array, callable $callback = null, $default = null)
     {
@@ -112,8 +100,6 @@ if (!function_exists('array_flatten')) {
      * @param int $depth
      *
      * @return array
-     *
-     * @deprecated Arr::flatten() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_flatten($array, $depth = INF)
     {
@@ -129,8 +115,6 @@ if (!function_exists('array_forget')) {
      * @param array|string $keys
      *
      * @return void
-     *
-     * @deprecated Arr::forget() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_forget(&$array, $keys)
     {
@@ -147,8 +131,6 @@ if (!function_exists('array_get')) {
      * @param mixed $default
      *
      * @return mixed
-     *
-     * @deprecated Arr::get() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_get($array, $key, $default = null)
     {
@@ -164,8 +146,6 @@ if (!function_exists('array_has')) {
      * @param string|array $keys
      *
      * @return bool
-     *
-     * @deprecated Arr::has() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_has($array, $keys)
     {
@@ -182,8 +162,6 @@ if (!function_exists('array_last')) {
      * @param mixed $default
      *
      * @return mixed
-     *
-     * @deprecated Arr::last() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_last($array, callable $callback = null, $default = null)
     {
@@ -199,8 +177,6 @@ if (!function_exists('array_only')) {
      * @param array|string $keys
      *
      * @return array
-     *
-     * @deprecated Arr::only() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_only($array, $keys)
     {
@@ -217,8 +193,6 @@ if (!function_exists('array_pluck')) {
      * @param string|array|null $key
      *
      * @return array
-     *
-     * @deprecated Arr::pluck() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_pluck($array, $value, $key = null)
     {
@@ -235,8 +209,6 @@ if (!function_exists('array_prepend')) {
      * @param mixed $key
      *
      * @return array
-     *
-     * @deprecated Arr::prepend() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_prepend($array, $value, $key = null)
     {
@@ -253,8 +225,6 @@ if (!function_exists('array_pull')) {
      * @param mixed $default
      *
      * @return mixed
-     *
-     * @deprecated Arr::pull() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_pull(&$array, $key, $default = null)
     {
@@ -270,8 +240,6 @@ if (!function_exists('array_random')) {
      * @param int|null $num
      *
      * @return mixed
-     *
-     * @deprecated Arr::random() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_random($array, $num = null)
     {
@@ -290,8 +258,6 @@ if (!function_exists('array_set')) {
      * @param mixed $value
      *
      * @return array
-     *
-     * @deprecated Arr::set() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_set(&$array, $key, $value)
     {
@@ -307,8 +273,6 @@ if (!function_exists('array_sort')) {
      * @param callable|string|null $callback
      *
      * @return array
-     *
-     * @deprecated Arr::sort() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_sort($array, $callback = null)
     {
@@ -323,8 +287,6 @@ if (!function_exists('array_sort_recursive')) {
      * @param array $array
      *
      * @return array
-     *
-     * @deprecated Arr::sortRecursive() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_sort_recursive($array)
     {
@@ -340,8 +302,6 @@ if (!function_exists('array_where')) {
      * @param callable $callback
      *
      * @return array
-     *
-     * @deprecated Arr::where() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_where($array, callable $callback)
     {
@@ -356,8 +316,6 @@ if (!function_exists('array_wrap')) {
      * @param mixed $value
      *
      * @return array
-     *
-     * @deprecated Arr::wrap() should be used directly instead. Will be removed in Laravel 6.0.
      */
     function array_wrap($value)
     {
