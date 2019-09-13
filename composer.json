@@ -23,7 +23,11 @@
     "autoload": {
         "psr-4": {
             "Helldar\\LaravelApp\\": "src/"
-        }
+        },
+        "files": [
+            "src/Support/helpers_arr.php",
+            "src/Support/helpers_string.php"
+        ]
     },
     "config": {
         "preferred-install": "dist",
