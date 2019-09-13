@@ -1,9 +1,9 @@
 # Deprecated Laravel 6 helpers
 
-![laravel-helpers](https://user-images.githubusercontent.com/10347617/40197729-f2a7b7de-5a1c-11e8-985a-9038bb5159bc.png)
+![laravel-helpers](https://user-images.githubusercontent.com/10347617/64847050-c25cd880-d616-11e9-9800-59cdaf1ae99c.png)
 
 <p align="center">
-    <a href="https://styleci.io/repos/45746985"><img src="https://styleci.io/repos/75637284/shield" alt="StyleCI" /></a>
+    <a href="https://styleci.io/repos/208077137"><img src="https://styleci.io/repos/208077137/shield" alt="StyleCI" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/laravel-helpers"><img src="https://img.shields.io/packagist/dt/laravel-helpers-helldar/laravel-helpers.svg?style=flat-square" alt="Total Downloads" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/laravel-helpers"><img src="https://poser.pugx.org/andrey-helldar/laravel-helpers/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/laravel-helpers"><img src="https://poser.pugx.org/andrey-helldar/laravel-helpers/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
