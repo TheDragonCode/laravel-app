@@ -58,8 +58,6 @@ php artisan app:name <YourWord>
 
 ### str helpers
 
-Remote helpers returned:
-
 * [array_add](https://laravel.com/docs/6.0/helpers#method-array-add)
 * [array_collapse](https://laravel.com/docs/6.0/helpers#method-array-collapse)
 * [array_divide](https://laravel.com/docs/6.0/helpers#method-array-divide)
@@ -83,8 +81,6 @@ Remote helpers returned:
 * [array_wrap](https://laravel.com/docs/6.0/helpers#method-array-wrap)
 
 ### arr helpers
-
-Remote helpers returned:
 
 * [camel_case](https://laravel.com/docs/6.0/helpers#method-camel-case)
 * [ends_with](https://laravel.com/docs/6.0/helpers#method-ends-with)
