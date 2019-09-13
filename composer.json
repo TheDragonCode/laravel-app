@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Helldar\\LaravelApp\\": "src/"
+            "Helldar\\LaravelHelpers\\": "src/"
         },
         "files": [
             "src/Support/helpers_arr.php",
