@@ -4,7 +4,7 @@ This package provides a backwards compatibility layer for Laravel 5.8 `app:name`
 
 <p align="center">
     <a href="https://styleci.io/repos/208077137"><img src="https://styleci.io/repos/208077137/shield" alt="StyleCI" /></a>
-    <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://img.shields.io/packagist/dt/laravel-app-helldar/laravel-app.svg?style=flat-square" alt="Total Downloads" /></a>
+    <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://img.shields.io/packagist/dt/andrey-helldar/laravel-app.svg?style=flat-square" alt="Total Downloads" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://poser.pugx.org/andrey-helldar/laravel-app/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://poser.pugx.org/andrey-helldar/laravel-app/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
     <a href="LICENSE"><img src="https://poser.pugx.org/andrey-helldar/laravel-app/license?format=flat-square" alt="License" /></a>
