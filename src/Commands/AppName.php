@@ -50,8 +50,6 @@ class AppName extends Command
      *
      * @param \Illuminate\Support\Composer $composer
      * @param \Illuminate\Filesystem\Filesystem $files
-     *
-     * @return void
      */
     public function __construct(Composer $composer, Filesystem $files)
     {
@@ -233,7 +231,8 @@ class AppName extends Command
         foreach ($files as $file) {
             $this->replaceIn(
                 $file->getRealPath(),
-                $this->currentRoot, $this->argument('name')
+                $this->currentRoot,
+                $this->argument('name')
             );
         }
     }
@@ -242,8 +241,8 @@ class AppName extends Command
      * Replace the given string in the given file.
      *
      * @param string $path
-     * @param string|array $search
-     * @param string|array $replace
+     * @param array|string $search
+     * @param array|string $replace
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
