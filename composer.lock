@@ -75,7 +75,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v7.5.0",
+            "version": "v7.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -129,7 +129,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.5.0",
+            "version": "v7.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -173,7 +173,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.5.0",
+            "version": "v7.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -226,7 +226,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.5.0",
+            "version": "v7.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
