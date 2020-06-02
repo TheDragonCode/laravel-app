@@ -10,6 +10,10 @@
     },
     "authors": [
         {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        },
+        {
             "name": "Andrey Helldar",
             "email": "helldar@ai-rus.com"
         }
