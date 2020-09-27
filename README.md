@@ -1,4 +1,4 @@
-# Laravel 6 `app:name` support
+# Laravel 6/7 `app:name` support
 
 This package provides a backwards compatibility layer for Laravel 5.8 `app:name` command in the latest Laravel release.
 
