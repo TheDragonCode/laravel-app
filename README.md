@@ -10,7 +10,7 @@ This package provides a backwards compatibility layer for Laravel 5.8 `app:name`
 
 > Important!
 > 
-> The project is supported by [Tidelift subscription](https://tidelift.com/lifter/package/packagist/andrey-helldar%2Flaravel-app/) only.
+> The project is supported by [Tidelift subscription](https://tidelift.com/funding/github/packagist/andrey-helldar/laravel-app) only.
 
 
 ## Installation
