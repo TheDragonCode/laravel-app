@@ -3,17 +3,19 @@
 This package provides a backwards compatibility layer for Laravel 5.8 `app:name` command in the latest Laravel release.
 
 <p align="center">
-    <a href="https://styleci.io/repos/208077137"><img src="https://styleci.io/repos/208077137/shield" alt="StyleCI" /></a>
     <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://img.shields.io/packagist/dt/andrey-helldar/laravel-app.svg?style=flat-square" alt="Total Downloads" /></a>
-    <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://poser.pugx.org/andrey-helldar/laravel-app/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
-    <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://poser.pugx.org/andrey-helldar/laravel-app/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
-    <a href="LICENSE"><img src="https://poser.pugx.org/andrey-helldar/laravel-app/license?format=flat-square" alt="License" /></a>
+    <a href="https://packagist.org/packages/andrey-helldar/laravel-app"><img src="https://img.shields.io/github/v/release/andrey-helldar/laravel-app?label=stable&style=flat-square" alt="Latest Stable Version" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/packagist/l/andrey-helldar/laravel-app.svg?style=flat-square" alt="License" /></a>
 </p>
+
+> Important!
+> 
+> The project is supported by [Tidelift subscription](https://tidelift.com/lifter/package/packagist/andrey-helldar%2Flaravel-app/) only.
 
 
 ## Installation
 
-To get the latest version of Laravel Helpers, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ```
 composer require andrey-helldar/laravel-app --dev
@@ -42,3 +44,5 @@ php artisan app:name <name>
 ## License
 
 This package is released under the [MIT License](LICENSE).
+
+The code is taken from the [Laravel Framework](https://github.com/laravel/framework/pull/27575).
