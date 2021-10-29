@@ -1,5 +1,7 @@
 # Laravel 6/7 `app:name` support
 
+<img src="https://preview.dragon-code.pro/andrey-helldar/laravel-app.svg?brand=laravel" alt="Laravel App"/>
+
 This package provides a backwards compatibility layer for Laravel 5.8 `app:name` command in the latest Laravel release.
 
 <p align="center">
