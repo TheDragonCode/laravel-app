@@ -1,4 +1,4 @@
-# Laravel 6/7 `app:name` support
+# Laravel `app:name` support
 
 <img src="https://preview.dragon-code.pro/andrey-helldar/laravel-app.svg?brand=laravel" alt="Laravel App"/>
 
