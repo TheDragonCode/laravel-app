@@ -1,7 +1,11 @@
 {
     "name": "andrey-helldar/laravel-app",
     "description": "Provides backwards compatibility for app:name command in the latest Laravel release.",
-    "keywords": ["laravel", "helpers", "console"],
+    "keywords": [
+        "laravel",
+        "helpers",
+        "console"
+    ],
     "type": "library",
     "license": "MIT",
     "support": {
@@ -20,9 +24,9 @@
     ],
     "require": {
         "php": "^7.2|^8.0",
-        "illuminate/console": "^6.0|^7.0",
-        "illuminate/filesystem": "^6.0|^7.0",
-        "illuminate/support": "^6.0|^7.0"
+        "illuminate/console": "^6.0|^7.0|^9.0",
+        "illuminate/filesystem": "^6.0|^7.0|^9.0",
+        "illuminate/support": "^6.0|^7.0|^9.0"
     },
     "suggest": {
         "laravel/helpers": "Provides backwards compatibility for helpers in the latest Laravel release."
