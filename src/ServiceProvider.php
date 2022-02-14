@@ -1,8 +1,8 @@
 <?php
 
-namespace Helldar\LaravelApp;
+namespace DragonCode\LaravelApp;
 
-use Helldar\LaravelApp\Commands\AppName;
+use DragonCode\LaravelApp\Commands\AppName;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
