@@ -8,6 +8,8 @@ This package provides a backwards compatibility layer for Laravel `app:name` com
 [![Total Downloads][badge_downloads]][link_packagist]
 [![License][badge_license]][link_license]
 
+> We recommend using the basic `App` namespace.
+> This will avoid possible collisions when connecting different packages.
 
 ## Installation
 
