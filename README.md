@@ -49,3 +49,5 @@ The code is taken from the [Laravel Framework](https://github.com/laravel/framew
 [badge_stable]:     https://img.shields.io/github/v/release/TheDragonCode/laravel-app?label=stable&style=flat-square
 
 [link_packagist]:   https://packagist.org/packages/dragon-code/laravel-app
+
+[link_license]:     LICENSE
